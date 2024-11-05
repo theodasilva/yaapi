@@ -8,6 +8,15 @@ components:
   name: navbar_links
   properties: {}
   type: FlowPanel
+- components:
+  - layout_properties: {grid_position: 'RLWIXE,APCIPW'}
+    name: link_
+    properties: {}
+    type: Link
+  layout_properties: {slot: left-nav}
+  name: column_panel_menu
+  properties: {}
+  type: ColumnPanel
 container:
   properties: {html: '@theme:standard-page.html'}
   type: HtmlTemplate
