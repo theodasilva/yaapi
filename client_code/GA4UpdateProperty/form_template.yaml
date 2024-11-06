@@ -25,6 +25,10 @@ components_by_slot:
       name: custom_group_check
       properties: {checked: true, text: Update custom groups}
       type: CheckBox
+    - layout_properties: {grid_position: 'QCJUJK,WSIRNN'}
+      name: open_custom_group_button
+      properties: {icon: 'fa:external-link', text: ''}
+      type: Button
     - layout_properties: {grid_position: 'REUIOZ,GDZSEI'}
       name: property_ids_label
       properties: {text: 'Property ids to update (separate by return line):'}
