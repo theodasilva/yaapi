@@ -4,6 +4,7 @@ unique_ids:
     theme.css: JCT7542DUGRXEK4TYC5VGFF5Q4Z25YSI
   forms:
     Default: U64PE55AFRZXXCPFR2VKIJDYQWYV6KKR
+    GA4CreateProperty: '1730866381666728855335996.2'
   modules: {}
   scripts: {}
   server_modules: {}
