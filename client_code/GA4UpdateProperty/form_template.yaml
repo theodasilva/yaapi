@@ -35,7 +35,7 @@ components_by_slot:
       name: property_ids_label
       properties: {text: 'Property ids to update (separate by return line):'}
       type: Label
-    - layout_properties: {grid_position: 'ALKEEE,RAVXKH'}
+    - layout_properties: {grid_position: 'DLSATR,ONGSHV'}
       name: property_ids
       properties: {}
       type: TextArea
