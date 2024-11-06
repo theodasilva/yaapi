@@ -1,4 +1,4 @@
-from ._anvil_designer import DefaultTemplate
+from ._anvil_designer import FormDefaultTemplate
 from anvil import *
 import anvil.google.auth, anvil.google.drive
 from anvil.google.drive import app_files
@@ -8,7 +8,7 @@ from anvil.tables import app_tables
 import anvil.users
 
 
-class Default(DefaultTemplate):
+class FormDefault(FormDefaultTemplate):
   def __init__(self, **properties):
     # Set Form properties and Data Bindings.
     self.init_components(**properties)

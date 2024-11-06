@@ -46,4 +46,4 @@ components_by_slot:
     properties: {role: outlined-card}
     type: ColumnPanel
 is_package: true
-layout: {type: 'form:Default'}
+layout: {type: 'form:FormDefault'}

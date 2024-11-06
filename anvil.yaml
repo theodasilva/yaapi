@@ -51,5 +51,5 @@ services:
 - client_config: {}
   server_config: {app_origin_redirect: true, client_id: 1094545414021-4k5rd5cejr1htioil080dki5t7d236b3.apps.googleusercontent.com, client_secret_enc: AeC7aaOE/kn7aqBMs0hXYu1XO2Fp/6nPLCSwbgq6BGrJs2QFTICVuI9QYmXmD82eqV4TvYQt46l8oUT6z/BOQezi/S3shniC7rhYzFDzPH/J+dmgK0zpGVumGaOoytVyfwobBbgyKe1Lap/p07yxKdCs2MN0vRCdc948p6NpB84zuk1Keh4o3Ds846ywgJu8aFAWOAp5/XV2D5RqHQ==}
   source: /runtime/services/google.yml
-startup: {module: Default, type: form}
+startup: {module: FormDefault, type: form}
 startup_form: null

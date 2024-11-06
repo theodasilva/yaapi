@@ -1,0 +1,23 @@
+components:
+- layout_properties: {grid_position: 'JVLZKM,YJHVRL'}
+  name: title_label
+  properties: {role: title, text: Custom Dimensions}
+  type: Label
+- layout_properties: {grid_position: 'YUSOZU,UVPDAH'}
+  name: display_name
+  properties: {}
+  type: Label
+- layout_properties: {grid_position: 'YUSOZU,COPTWL'}
+  name: description
+  properties: {}
+  type: Label
+- layout_properties: {grid_position: 'YUSOZU,RJPGSN'}
+  name: repeating_panel
+  properties: {item_template: CustomDim.ItemTemplate1}
+  type: RepeatingPanel
+- layout_properties: {grid_position: 'YUSOZU,FKZBKL'}
+  name: label_2
+  properties: {text: '            parameter_name=custom_dimension.get(''parameter_name'', None),            display_name=custom_dimension.get(''display_name'', None),            description=custom_dimension.get(''description'', None),            scope=custom_dimension.get(''scope'', None),'}
+  type: Label
+container: {type: ColumnPanel}
+is_package: true
