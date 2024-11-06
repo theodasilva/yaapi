@@ -65,8 +65,8 @@ class GA4UpdateProperty(GA4UpdatePropertyTemplate):
     for property_id in property_ids:
       if self.custom_dim_check.checked:
         anvil.server.call("copy_custom_dim", base_property_id, property_id)
-        time.sleep(1)
+        # time.sleep(1)
       if self.custom_group_check.checked:
         anvil.server.call("copy_channel_groups", base_property_id, property_id)
-        time.sleep(1)
-      time.sleep(2)
+        # time.sleep(1)
+      # time.sleep(2)
