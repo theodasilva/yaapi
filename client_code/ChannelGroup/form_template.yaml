@@ -4,13 +4,11 @@ components:
     properties: {item_template: CustomDim.RowTemplate1}
     type: RepeatingPanel
   layout_properties: {grid_position: 'YBLDCY,TBXKCS'}
-  name: custom_dim_data_grid
+  name: channel_group_data_grid
   properties:
     columns:
     - {data_key: display_name, id: JKSDUP, title: Display Name}
     - {data_key: description, id: VJQQOR, title: Descritpion}
-    - {data_key: parameter_name, expand: false, id: OJLQEN, title: Parameter Name, width: 247.8984375}
-    - {data_key: scope, id: AFUBDS, title: Scope}
     rows_per_page: 30
   type: DataGrid
 container:

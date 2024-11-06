@@ -1,0 +1,19 @@
+components:
+- layout_properties: {grid_position: 'KANHOV,WNFWYO'}
+  name: display_name
+  properties: {}
+  type: Label
+- layout_properties: {grid_position: 'KANHOV,WXJELD'}
+  name: description
+  properties: {}
+  type: Label
+- layout_properties: {grid_position: 'KANHOV,EVMHZQ'}
+  name: parameter_name
+  properties: {}
+  type: Label
+- layout_properties: {grid_position: 'KANHOV,DITPGB'}
+  name: scope
+  properties: {}
+  type: Label
+container: {type: ColumnPanel}
+is_package: true

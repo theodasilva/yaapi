@@ -1,4 +1,4 @@
-from ._anvil_designer import CustomDimTemplate
+from ._anvil_designer import ChannelGroupTemplate
 from anvil import *
 import anvil.server
 import anvil.google.auth, anvil.google.drive
@@ -9,20 +9,17 @@ import anvil.tables.query as q
 from anvil.tables import app_tables
 
 
-class CustomDim(CustomDimTemplate):
+class ChannelGroup(ChannelGroupTemplate):
   def __init__(self, **properties):
     # Set Form properties and Data Bindings.
     self.init_components(**properties)
-    self.refresh_custom_dim_grid()
+    self.refresh_channel_group_grid()
 
-
-  def get_custom_dim(self):
-    res = anvil.server.call('get_custom_dimension', "463584828")
+  def get_channel_groups(self):
+    res = anvil.server.call("get_channel_groups", "463584828")
     return res
 
-
-  def refresh_custom_dim_grid(self):
-    data = self.get_custom_dim()
+  def refresh_channel_group_grid(self):
+    data = self.get_channel_groups()
     for item in data:
-        self.custom_dim_data_grid.add_component(DataRowPanel(item=item))
-    
+      self.channel_group_data_grid.add_component(DataRowPanel(item=item))

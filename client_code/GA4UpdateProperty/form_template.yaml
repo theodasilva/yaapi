@@ -17,15 +17,17 @@ components_by_slot:
       name: custom_dim_check
       properties: {checked: true, text: Update custom dimensions}
       type: CheckBox
-    - layout_properties: {grid_position: 'JOSBKD,FSGBPG'}
+    - event_bindings: {click: open_custom_dim_button_click}
+      layout_properties: {grid_position: 'JOSBKD,FSGBPG'}
       name: open_custom_dim_button
       properties: {icon: 'fa:external-link', text: ''}
       type: Button
     - layout_properties: {grid_position: 'QCJUJK,IPOMVV'}
       name: custom_group_check
-      properties: {checked: true, text: Update custom groups}
+      properties: {checked: true, text: Update channel groups}
       type: CheckBox
-    - layout_properties: {grid_position: 'QCJUJK,WSIRNN'}
+    - event_bindings: {click: open_custom_group_button_click}
+      layout_properties: {grid_position: 'QCJUJK,WSIRNN'}
       name: open_custom_group_button
       properties: {icon: 'fa:external-link', text: ''}
       type: Button
@@ -37,7 +39,8 @@ components_by_slot:
       name: property_ids
       properties: {}
       type: TextArea
-    - layout_properties: {grid_position: 'MUXZKC,RDYLQT'}
+    - event_bindings: {click: update_button_click}
+      layout_properties: {grid_position: 'MUXZKC,RDYLQT'}
       name: update_button
       properties: {text: Update}
       type: Button
