@@ -13,11 +13,12 @@ class CustomDim(CustomDimTemplate):
   def __init__(self, **properties):
     # Set Form properties and Data Bindings.
     self.init_components(**properties)
+    self.base_property_id = properties["base_property_id"]
     self.refresh_custom_dim_grid()
 
 
   def get_custom_dim(self):
-    res = anvil.server.call('get_custom_dimension', "463584828")
+    res = anvil.server.call('get_custom_dimension', self.base_property_id.text)
     return res
 
 

@@ -29,7 +29,7 @@ class GA4UpdateProperty(GA4UpdatePropertyTemplate):
       return
       
     alert(
-      content=CustomDim(),
+      content=CustomDim(base_property_id=self.base_property_id),
       title="Custom Dimensions",
       large=True,
     )
@@ -41,7 +41,7 @@ class GA4UpdateProperty(GA4UpdatePropertyTemplate):
       return
       
     alert(
-      content=ChannelGroup(),
+      content=ChannelGroup(base_property_id=self.base_property_id),
       title="Channel Groups",
       large=True,
     )
@@ -69,4 +69,4 @@ class GA4UpdateProperty(GA4UpdatePropertyTemplate):
       if self.custom_group_check.checked:
         anvil.server.call("copy_channel_groups", base_property_id, property_id)
         time.sleep(1)
-      time.sleep(5)
+      time.sleep(2)

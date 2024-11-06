@@ -13,10 +13,11 @@ class ChannelGroup(ChannelGroupTemplate):
   def __init__(self, **properties):
     # Set Form properties and Data Bindings.
     self.init_components(**properties)
+    self.base_property_id = properties["base_property_id"]
     self.refresh_channel_group_grid()
 
   def get_channel_groups(self):
-    res = anvil.server.call("get_channel_groups", "463584828")
+    res = anvil.server.call("get_channel_groups", self.base_property_id.text)
     return res
 
   def refresh_channel_group_grid(self):
