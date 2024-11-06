@@ -77,7 +77,6 @@ def copy_channel_groups(property_id_from, property_id_to, retry=0):
       "groupingRule": channel_group["grouping_rule"],
     })
     print("Channel group: ", res)
-    # time.sleep(1)
     
   return channel_groups
 
@@ -91,7 +90,6 @@ def copy_custom_dim(property_id_from, property_id_to, retry=0):
   for custom_dimension in custom_dimensions:
     res = requests.post(url, headers={"Authorization": f"Bearer {access_token}"}, json=custom_dimension)
     print("Custom Dim: ", res)
-    # time.sleep(1)
     
   return True
 
