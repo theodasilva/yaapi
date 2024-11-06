@@ -53,17 +53,14 @@ def get_channel_groups(property_id, retry=0):
   res = requests.get(url, headers={"Authorization": f"Bearer {access_token}"})
   for item in res.json()["channelGroups"]:
     if "displayName" not in item:
-      print("Except item\n\n")
       continue
       
-    print(f"Append item: {item['displayName']}")
     data.append({
       "display_name": item["displayName"],
       "description": item["description"],
       "grouping_rule": item["groupingRule"],
     })
     
-  print(f"FINAL data: {data}")
   return data
 
 
@@ -71,7 +68,6 @@ def get_channel_groups(property_id, retry=0):
 def copy_channel_groups(property_id_from, property_id_to, retry=0):
   access_token = anvil.google.auth.get_user_access_token()
   channel_groups = get_channel_groups(property_id_from)
-  print(f"Chan g {channel_groups}")
   url = f"https://analyticsadmin.googleapis.com/v1alpha/properties/{property_id_to}/channelGroups"
   
   for channel_group in channel_groups:
@@ -81,7 +77,7 @@ def copy_channel_groups(property_id_from, property_id_to, retry=0):
       "groupingRule": channel_group["grouping_rule"],
     })
     print("Channel group: ", res)
-    time.sleep(2)
+    time.sleep(1)
     
   return channel_groups
 
@@ -95,7 +91,7 @@ def copy_custom_dim(property_id_from, property_id_to, retry=0):
   for custom_dimension in custom_dimensions:
     res = requests.post(url, headers={"Authorization": f"Bearer {access_token}"}, json=custom_dimension)
     print("Custom Dim: ", res)
-    time.sleep(2)
+    time.sleep(1)
     
   return True
 
