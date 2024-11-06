@@ -1,0 +1,37 @@
+components_by_slot:
+  slot_1:
+  - layout_properties: {}
+    name: page_title
+    properties: {align: center, bold: true, role: title, text: GA4 - Update Property}
+    type: Label
+  - layout_properties: {}
+    name: property_ids_label
+    properties: {text: 'Property ids to update:'}
+    type: Label
+  - components:
+    - layout_properties: {grid_position: 'WYGFBM,RLGTOJ'}
+      name: base_property_label
+      properties: {text: 'Base Property id:'}
+      type: Label
+    - layout_properties: {grid_position: 'WYGFBM,CXNMHG'}
+      name: base_property_id
+      properties: {}
+      type: TextBox
+    - layout_properties: {grid_position: 'JOSBKD,FEVXFH'}
+      name: custom_dim_check
+      properties: {text: Update custom dimensions}
+      type: CheckBox
+    - layout_properties: {grid_position: 'QCJUJK,IPOMVV'}
+      name: custom_group_check
+      properties: {text: Update custom groups}
+      type: CheckBox
+    - layout_properties: {grid_position: 'ALKEEE,RAVXKH'}
+      name: property_ids
+      properties: {}
+      type: TextArea
+    layout_properties: {}
+    name: card
+    properties: {role: outlined-card}
+    type: ColumnPanel
+is_package: true
+layout: {type: 'form:Default'}

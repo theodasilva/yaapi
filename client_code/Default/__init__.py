@@ -15,5 +15,13 @@ class Default(DefaultTemplate):
 
 
   def reset_links(self, **event_args):
-    self.contact_link.role = ''
-    self.about_us_link.role = ''
+    self.create_property_link.role = ''
+    self.update_property_link.role = ''
+
+  def create_property_link_click(self, **event_args):
+    """This method is called when the link is clicked"""
+    open_form('GA4CreateProperty')
+
+  def update_property_link_click(self, **event_args):
+    """This method is called when the link is clicked"""
+    open_form('GA4UpdateProperty')

@@ -9,9 +9,16 @@ components:
   properties: {}
   type: FlowPanel
 - components:
-  - layout_properties: {grid_position: 'RLWIXE,APCIPW'}
-    name: link_create_property
+  - components: []
+    event_bindings: {click: create_property_link_click}
+    layout_properties: {grid_position: 'RLWIXE,APCIPW'}
+    name: create_property_link
     properties: {role: null, text: GA4 - Create property}
+    type: Link
+  - event_bindings: {click: update_property_link_click}
+    layout_properties: {grid_position: 'NPOKJW,ISQTNY'}
+    name: update_property_link
+    properties: {role: null, text: GA4 - Update property}
     type: Link
   layout_properties: {slot: left-nav}
   name: column_panel_menu
