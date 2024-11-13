@@ -14,7 +14,6 @@ class FormDefault(FormDefaultTemplate):
     # Set Form properties and Data Bindings.
     self.init_components(**properties)
 
-
   def reset_links(self, **event_args):
     self.create_property_link.role = ''
     self.update_property_link.role = ''
